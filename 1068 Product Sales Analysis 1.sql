@@ -4,3 +4,5 @@ from Sales natural join Product
 
 
 
+
+
