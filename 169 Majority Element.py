@@ -17,11 +17,11 @@ class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         nums.sort()
         return nums[len(nums) // 2]
+    
+#%% Arvin's approach:
+# This approach is as like as Ali's approach and this algorithm is famous to Boyer-Moore voting algorithm.
+# I and Ali talked about this algorithm a lot and had a comprehensive analysis in a cafe.
 
-
-#%% Arvin's code
-# We have talked about this algorithm in a cafe. This algorithm is called Boyer-Moore or Candidate/Count
-# algorith.
 class Solution(object):
     def majorityElement(self, nums):
         """
@@ -38,4 +38,5 @@ class Solution(object):
                     count += 1                
             elif count != 0 and num != candidate:
                 count -= 1
+
         return candidate
