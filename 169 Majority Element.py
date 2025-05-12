@@ -38,4 +38,5 @@ class Solution(object):
                     count += 1                
             elif count != 0 and num != candidate:
                 count -= 1
+
         return candidate
